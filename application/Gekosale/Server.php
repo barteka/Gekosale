@@ -4,7 +4,7 @@
  * Gekosale, Open Source E-Commerce Solution
  * http://www.gekosale.pl
  *
- * Copyright (c) 2012 WellCommerce sp. z o.o. Zabronione jest usuwanie informacji o licencji i autorach.
+ * Copyright (c) 2008-2013 WellCommerce sp. z o.o. Zabronione jest usuwanie informacji o licencji i autorach.
  *
  * This library is free software; you can redistribute it and/or 
  * modify it under the terms of the GNU Lesser General Public
