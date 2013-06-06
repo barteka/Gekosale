@@ -3,14 +3,13 @@
  * Gekosale, Open Source E-Commerce Solution
  * http://www.gekosale.com
  *
- * Copyright (c) 2009-2011 Gekosale
+ * Copyright (c) 2009-2013 WellCommerce sp. z o.o.. Zabronione jest usuwanie informacji o licencji i autorach.
  *
- * This program is free software; you can redistribute it and/or modify it under the terms
- * of the GNU General Public License Version 3, 29 June 2007 as published by the Free Software
- * Foundation (http://opensource.org/licenses/gpl-3.0.html).
- * If you did not receive a copy of the license and are unable to obtain it through the
- * world-wide-web, please send an email to license@verison.pl so we can send you a copy immediately.
- *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ * 
  * $Revision: 54 $
  * $Author: krzotr $
  * $Date: 2011-04-09 09:52:26 +0200 (So, 09 kwi 2011) $
