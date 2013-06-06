@@ -6,7 +6,7 @@ defined('ROOTPATH') or die('No direct access allowed.');
  * Gekosale, Open Source E-Commerce Solution
  * http://www.gekosale.pl
  *
- * Copyright (c) 2009-2011 Gekosale
+ * Copyright (c) 2009-2013 WellCommerce sp. z o.o.
  *
  * This program is free software; you can redistribute it and/or modify it under the terms 
  * of the GNU General Public License Version 3, 29 June 2007 as published by the Free Software
