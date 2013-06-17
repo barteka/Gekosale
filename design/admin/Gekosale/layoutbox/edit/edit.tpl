@@ -17,7 +17,7 @@
 {% block content %}
 <h2><img src="{{ DESIGNPATH }}_images_panel/icons/modules/layoutbox-edit.png" alt=""/>{% trans %}TXT_LAYOUT_BOX_EDIT{% endtrans %}</h2>
 <ul class="possibilities">
-	<li><a href="#delete" class="button delete" id="delete"><span>{% trans %}TXT_LAYOUT_BOX_DELETE{% endtrans %}</span></a></li>
+	<li><a href="#delete" class="button delete" id="delete"><span><img src="{{ DESIGNPATH }}_images_panel/icons/buttons/delete.png" alt="{% trans %}TXT_LAYOUT_BOX_DELETE{% endtrans %}" />{% trans %}TXT_LAYOUT_BOX_DELETE{% endtrans %}</span></a></li>
 	<li><a href="{{ URL }}{{ CURRENT_CONTROLLER }}/add" class="button"><span><img src="{{ DESIGNPATH }}_images_panel/icons/buttons/add.png" alt="{% trans %}TXT_LAYOUT_BOX_ADD{% endtrans %}"/>{% trans %}TXT_LAYOUT_BOX_ADD{% endtrans %}</span></a></li>
 	<!-- <li><a href="#layoutbox" rel="reset" class="button reset"><span><img src="{{ DESIGNPATH }}_images_panel/icons/buttons/clean.png" alt=""/>{% trans %}TXT_START_AGAIN{% endtrans %}</span></a></li> -->
 	<li><a href="#layoutbox" rel="submit" class="button ok"><span><img src="{{ DESIGNPATH }}_images_panel/icons/buttons/check.png" alt=""/>{% trans %}TXT_SAVE_AND_FINISH{% endtrans %}</span></a></li>
