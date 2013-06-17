@@ -873,7 +873,7 @@ class ViewModel extends Component\Model\Datagrid
 				$Data[] = Array(
 					'id' => $rs['viewid'],
 					'name' => $rs['name'],
-					'active' => (Helper::getViewId() == $rs['id']) ? true : false
+					'active' => (Helper::getViewId() == $rs['viewid']) ? true : false
 				);
 			}
 		}
