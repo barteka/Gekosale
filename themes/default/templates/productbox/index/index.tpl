@@ -51,12 +51,14 @@
                         <li class="label{% if status.symbol != '' %}-{{ status.symbol }}{% endif %}">{{ status.name }}</li>
                         {% endfor %}
                     </ul>
-                    {% if product.opinions > 0 %}
-					<div class="product-star" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-						<div class="star pull-left readonly" itemprop="ratingValue" data-rating="{{ product.rating }}">{{ product.rating }}</div>
-                        <span class="info pull-left">(<strong>{{ product.rating }}</strong>/5) <a href="#review" title="">Opinie (<span itemprop="reviewCount">{{ product.opinions }}</span>)</a></span>
-					</div>
-					{% endif %}
+		{% if reviews == 1 %}
+			{% if product.opinions > 0 %}
+				<div class="product-star" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+					<div class="star pull-left readonly" itemprop="ratingValue" data-rating="{{ product.rating }}">{{ product.rating }}</div>
+                        		<span class="info pull-left">(<strong>{{ product.rating }}</strong>/5) <a href="#review" title="">Opinie (<span itemprop="reviewCount">{{ product.opinions }}</span>)</a></span>
+				</div>
+			{% endif %}
+		{% endif %}
                     <div class="intro">
                     	<div itemprop="description">{{ product.shortdescription }}</div>
                     	{% if product.producername != '' %}
