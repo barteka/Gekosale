@@ -53,9 +53,12 @@ class DatasetModel extends Component\Model
 	{
 		$dir = ROOTPATH . 'serialization' . DS;
 		$file = 'Cache.Dataset_';
-		foreach (glob($dir . $file . '*') as $key => $fn){
-			if (is_file($fn)){
-				@unlink($fn);
+		$dir_files = glob($dir . $file . '*');
+
+		$count_glob = count($dir_files);
+		for($i=0; $i<$count_glob; $i++){
+			if (is_file($dir_files[$i])){
+				@unlink($dir_files[$i]);
 			}
 		}
 	}
