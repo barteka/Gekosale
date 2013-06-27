@@ -8,7 +8,9 @@
 		{% if files|length > 0 %}
 		<li><a href="#files" data-toggle="tab">{% trans %}TXT_FILES{% endtrans %}</a></li>
 		{% endif %}
-		<li><a href="#reviews" data-toggle="tab">Opinie</a></li>
+		{% if reviews == 1 %}
+			<li><a href="#reviews" data-toggle="tab">{% trans %}TXT_OPINION{% endtrans %}</a></li>
+		{% endif %}
 	</ul>
 	<div id="productTabContent" class="tab-content">
 	{% if product.description != '' %} 
@@ -26,7 +28,9 @@
 		{% include 'productbox/index/files.tpl' %}
 	</div>
 	{% endif %}
-	<div class="tab-pane fade product-details" id="reviews">
-		{% include 'productbox/index/opinions.tpl' %}
-	</div>
+	{% if reviews == 1 %}
+		<div class="tab-pane fade product-details" id="reviews">
+			{% include 'productbox/index/opinions.tpl' %}
+		</div>
+	{% endif %}
 </div>
