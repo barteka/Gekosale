@@ -28,6 +28,8 @@
 	{% include 'productbox/index/files.tpl' %}
 </div>
 {% endif %}
-<div id="reviews">
-{% include 'productbox/index/opinions.tpl' %}
-</div>
+{% if reviews == 1 %}
+	<div id="reviews">
+	{% include 'productbox/index/opinions.tpl' %}
+	</div>
+{% endif %}
