@@ -2609,6 +2609,7 @@ CREATE TABLE `view` (
   `gatransactions` int(10) unsigned NOT NULL,
   `photoid` varchar(255) DEFAULT NULL,
   `favicon` varchar(255) DEFAULT NULL,
+  `reviews` int(10) unsigned NOT NULL DEFAULT '1',
   `offline` int(10) unsigned NOT NULL DEFAULT '0',
   `offlinetext` text,
   `cartredirect` int(11) DEFAULT '1',
