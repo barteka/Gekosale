@@ -13,10 +13,10 @@
 			{% else %}
 			<p class="price">{% if showtax == 0 %}{{ item.pricenetto|priceFormat }}{% else %}{{ item.price|priceFormat }}{% endif %}</p>
 			{% endif %}
-			<a class="btn btn-primary" onclick="xajax_doQuickAddCart({{ item.id }});return false;" href="{{ path('frontend.productcart', {"param": item.seo}) }}"><i class="icon-shopping-cart icon-white"></i> Do koszyka</a>
+			<a class="btn btn-primary" onclick="xajax_doQuickAddCart({{ item.id }});return false;" href="{{ path('frontend.productcart', {"param": item.seo}) }}"><i class="icon-shopping-cart icon-white"></i> {% trans %}TXT_ADD_TO_CART{% endtrans %}</a>
 		</div>
 	</div>
 	{% endfor %}
 </div>
-<a class="left carousel-control" href="#myCarousel"	data-slide="prev"></a> 
+<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a> 
 <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
