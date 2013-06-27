@@ -75,6 +75,7 @@ class ViewController extends Component\Controller\Admin
 				'store' => $ViewData['store'],
 				'defaultvatid' => $ViewData['defaultvatid'],
 				'showtax' => $ViewData['showtax'],
+				'reviews' => $ViewData['reviews'],
 				'offline' => $ViewData['offline'],
 				'offlinetext' => $ViewData['offlinetext'],
 				'pageschemeid' => $ViewData['pageschemeid'],
