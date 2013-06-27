@@ -116,6 +116,7 @@ class ViewModel extends Component\Model\Datagrid
 				'dispatchmethods' => $this->getDispatchmethodView($id),
 				'paymentmethods' => $this->getPaymentmethodView($id),
 				'url' => $this->getViewUrl($id),
+				'reviews' => $rs['reviews'],
 				'offline' => $rs['offline'],
 				'offlinetext' => $rs['offlinetext'],
 				'cartredirect' => $rs['cartredirect'],
@@ -348,6 +349,7 @@ class ViewModel extends Component\Model\Datagrid
 					taxes,
 					showtax,
 					defaultvatid,
+					reviews,
 					offline,
 					offlinetext,
 					cartredirect,
@@ -371,6 +373,7 @@ class ViewModel extends Component\Model\Datagrid
 					:taxes,
 					:showtax, 
 					:defaultvatid, 
+					:reviews, 
 					:offline,
 					:offlinetext,
 					:cartredirect,
@@ -395,6 +398,12 @@ class ViewModel extends Component\Model\Datagrid
 		$stmt->bindValue('taxes', $Data['taxes']);
 		$stmt->bindValue('showtax', $Data['showtax']);
 		$stmt->bindValue('defaultvatid', $Data['defaultvatid']);
+		if (isset($Data['reviews']) && ! is_null($Data['reviews'])){
+			$stmt->bindValue('reviews', 1);
+		}
+		else{
+			$stmt->bindValue('reviews', 0);
+		}
 		if (isset($Data['offline']) && ! is_null($Data['offline'])){
 			$stmt->bindValue('offline', 1);
 		}
@@ -635,6 +644,7 @@ class ViewModel extends Component\Model\Datagrid
 					taxes=:taxes,
 					showtax = :showtax, 
 					defaultvatid = :defaultvatid, 
+					reviews = :reviews, 
 					offline = :offline, 
 					offlinetext = :offlinetext, 
 					forcelogin = :forcelogin,
@@ -660,6 +670,12 @@ class ViewModel extends Component\Model\Datagrid
 		$stmt->bindValue('showtax', $Data['showtax']);
 		$stmt->bindValue('defaultvatid', $Data['defaultvatid']);
 		$stmt->bindValue('id', $id);
+		if (isset($Data['reviews']) && $Data['reviews'] == 1){
+			$stmt->bindValue('reviews', 1);
+		}
+		else{
+			$stmt->bindValue('reviews', 0);
+		}
 		if (isset($Data['offline']) && $Data['offline'] == 1){
 			$stmt->bindValue('offline', 1);
 		}
