@@ -125,6 +125,11 @@ class ViewForm extends Component\Form
 			'label' => _('TXT_NAMESPACE')
 		)));
 		
+		$requiredData->AddChild(new FormEngine\Elements\Checkbox(Array(
+			'name' => 'reviews',
+			'label' => _('TXT_ENABLE_OPINIONS')
+		)));
+		
 		$offline = $requiredData->AddChild(new FormEngine\Elements\Checkbox(Array(
 			'name' => 'offline',
 			'label' => _('TXT_SHOP_OFFLINE'),
