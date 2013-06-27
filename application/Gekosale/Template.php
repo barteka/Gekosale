@@ -198,6 +198,7 @@ class Template
 			$this->assign('enableregistration', $this->layer['enableregistration']);
 			$this->assign('client', $client);
 			$this->assign('clientdata', $client);
+			$this->assign('reviews', $this->layer['reviews']);
 			$this->assign('showtax', $this->layer['showtax']);
 			$this->assign('currencySymbol', Session::getActiveCurrencySymbol());
 			$this->assign('count', $cartModel->getProductAllCount());
